@@ -1,0 +1,219 @@
+.img_central {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circle-colors {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.circle-colors img {
+  font-size: 16px;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
+.main {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  min-height: 79vh;
+}
+
+.circle {
+  clip-path: circle(50% at 50% 50%);
+  cursor: pointer;
+  height: 6em;
+  opacity: 0.8;
+  width: 6em;
+  z-index: 99;
+  /* position: absolute; */
+}
+.circle-redwine-container {
+  right: 37%;
+  top: 8%;
+}
+.circle-blue-container {
+  right: 25%;
+  bottom: 38%;
+}
+.circle-rose-container {
+  right: 14%;
+  top: 27%;
+}
+.circle-yellow-container {
+  left: 37%;
+  bottom: 16%;
+}
+.circle-green-container {
+  left: 30%;
+  bottom: 45%;
+}
+.circle-orange-container {
+  left: 10%;
+  top: 32%;
+}
+.circle-red-container {
+  right: 33%;
+  top: 28%;
+}
+.circle-brown-container {
+  right: 3%;
+  bottom: 22%;
+}
+.circle-turquoise-container {
+  left: -2%;
+  top: 42%;
+}
+.circle-violet-container {
+  right: 5%;
+  bottom: 42%;
+}
+.circle-lightgreen-container {
+  left: 25%;
+  top: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+  .circle {
+    height: 6em;
+    width: 6em;
+  }
+
+  .circle-redwine-container {
+    left: 53%;
+    top: 3%;
+  }
+  .circle-blue-container {
+    right: 27%;
+    bottom: 37%;
+  }
+  .circle-rose-container {
+    right: 18%;
+    top: 24%;
+  }
+  .circle-yellow-container {
+    left: 40%;
+    bottom: 14%;
+  }
+  .circle-green-container {
+    left: 35%;
+    bottom: 45%;
+  }
+  .circle-orange-container {
+    left: 20%;
+    top: 28%;
+  }
+  .circle-red-container {
+    right: 38%;
+    top: 28%;
+  }
+  .circle-brown-container {
+    right: 8%;
+    bottom: 22%;
+  }
+  .circle-turquoise-container {
+    left: 5%;
+    top: 40%;
+  }
+  .circle-violet-container {
+    right: 10%;
+    bottom: 42%;
+  }
+  .circle-lightgreen-container {
+    left: 38%;
+    top: 10%;
+  }
+}
+
+.line {
+  background: linear-gradient(
+    90deg,
+    rgba(190, 108, 105, 1) 0%,
+    rgba(211, 186, 116, 1) 53%,
+    rgba(6, 137, 186, 1) 100%
+  );
+  height: 5px;
+  width: 90%;
+}
+
+.MuiContainer-root ul li {
+  align-items: center !important;
+  justify-content: center;
+}
+@media screen and (max-width: 1920px) {
+  .img_central {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .img_central img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .img_central {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img_central img {
+    width: 100%;
+  }
+
+  .img_central {
+    font-size: 8px;
+  }
+}
+
+/*  */
+
+.logo-ingram-bullets {
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  background-color: grey;
+  color: grey !important;
+}
+
+.title-edu-bullets {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+
+  font-size: 4rem;
+  line-height: 3.8rem;
+  font-weight: bold;
+  color: #1d1d38;
+}
+
+.title-edu-bullets span {
+  color: #53afe4;
+}
+
+@media screen and (max-width: 992px) {
+  .title-edu-bullets {
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+/* --------------------- PRODUCTION */
+
+/* DRAWER */
+.css-1qsxih2 {
+  width: 90% !important;
+}
+
+/* TITLE */
+.css-12fw2ew {
+  margin: 0 !important;
+  font-weight: 400 !important;
+  line-height: 0.6 !important;
+}
