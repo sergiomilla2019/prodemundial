@@ -46,10 +46,10 @@ const Home: NextPage = () => {
             variant="h1"
             gutterBottom
           >
-            Education
+            Prode Mundial 2022
           </Typography>
 
-          <img src={"/img/Logos/Logo-Ingram-Solutions.png"} alt="logo ingram" />
+          
         </Stack>
       </Box>
       {

@@ -1,0 +1,72 @@
+/*  MOBILE FIRST */
+
+.gridContainer {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% auto auto;
+    grid-template-areas:
+      "logo"
+      "form"
+      "imagen";
+  }
+  
+  .gridItem {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    grid-area: logo;
+    padding-left: 80px;
+  }
+  
+  .imagen {
+    grid-area: imagen;
+    margin: 10px 0 50px;
+  }
+  
+  .form {
+    grid-area: form;
+  }
+  
+  .formContainer {
+    width: 90%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  @media screen and (min-width: 678px) {
+    .formContainer {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .gridContainer {
+      grid-template-columns: 55% 45%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas:
+        "logo form"
+        "imagen form";
+    }
+    .formContainer {
+      margin: 0;
+    }
+    .imagen {
+      margin: 0;
+    }
+  }
+  
+  .terminos {
+    width: fit-content;
+    margin: 0;
+    display: inline !important;
+  }

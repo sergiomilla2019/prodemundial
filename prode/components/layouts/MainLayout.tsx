@@ -3,12 +3,14 @@ import {
   Box,
   Stack, 
   Button,
-  Modal
+  Modal,
+  Typography
 } from "@mui/material"
 import Image from "next/image"
 import { useTheme } from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
+import LoginProde from "../LoginProde"
 import { DrawerComponen } from "../drawer/DrawerComponen"
 import Contact from "../contact"
 import {
@@ -89,44 +91,31 @@ export const MainLayout: FC<Props> = ({ setcoverState }) => {
     idleUser()
   }, [])
 
-
+  const login = localStorage.getItem('login');
 
 
   return (
     <>
-        
-      <Box component="main">
+
+      { 
+        ( login !== 'true' ) ? 
+        <LoginProde />
+        :
+        <Box component="main" sx={{ bgcolor: "#ffffff" }}>
           
         <div className="img_central">
           <div className="circle-colors">
-            <img src="/img/CoverSinBullets.png" alt="cover" />
-            <DrawerComponen {...imagesrose}></DrawerComponen>
-            <DrawerComponen {...imagesblue}></DrawerComponen>
-            <DrawerComponen {...imagesyellow}></DrawerComponen>
-            <DrawerComponen {...imagesgreen}></DrawerComponen>
-            <DrawerComponen {...imagesorange}></DrawerComponen>
-            <DrawerComponen {...imagesred}></DrawerComponen>
-            <DrawerComponen {...imageslightgreen}></DrawerComponen>
-            <DrawerComponen {...imagesturquoise}></DrawerComponen>
-            <DrawerComponen {...imagesviolet}></DrawerComponen>
-            <DrawerComponen {...imagesbrown}></DrawerComponen>
-            <DrawerComponen {...imagesredwine}></DrawerComponen>
+             <Typography>Fixture</Typography>
           </div>
-          {/* <div className="line"></div> */}
         </div>
         
       </Box>
+      }
+      
 
-      <Box>
-        {/* <img
-          src="/img/Logos/Logo-Ingram-Solutions.png"
-          alt="ingram solutions"
-          className="logo-ingram-bullets"
-        /> */}
-        <h1 className="title-edu-bullets">
-          UN CENTRO <br /> EDUCATIVO <br /> <span>CONECTADO</span>
-        </h1>
-      </Box>
+      
+
+      
     </>
   )
 }
