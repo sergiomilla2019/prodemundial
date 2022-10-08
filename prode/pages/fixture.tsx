@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEvent } from 'react';
+import React, { useState, useEffect, ChangeEvent } from 'react';
 import { 
     Grid, 
     Typography, 
@@ -14,6 +14,7 @@ import {
   } from '@mui/material';
 
   import { useForm, SubmitHandler } from "react-hook-form"
+import { FC } from 'react';
 
 
   interface IFormInputs {
@@ -305,7 +306,7 @@ import {
     
 ]
 
-const fixture = () => {
+const Fixture:FC = () => {
 
     const [fecha, setFecha] = useState('1');
     const [partidosFecha, setPartidosFecha] = useState(partidos);
@@ -422,7 +423,7 @@ const goles = [
                     </TextField>
                 {
                      partidosFecha?.map((partido) => (
-                            <Card sx={{ display: 'flex', justifyContent: "space-between" }}>
+                            <Card key={partido.id} sx={{ display: 'flex', justifyContent: "space-between" }}>
                                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                     <CardContent sx={{ flex: '1 0 auto' }}>
                                         <Typography component="div" variant="h5">
@@ -498,4 +499,4 @@ const goles = [
   )
 }
 
-export default fixture
+export default Fixture
