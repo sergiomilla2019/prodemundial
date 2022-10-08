@@ -14,7 +14,6 @@ import {
   } from '@mui/material';
 
   import { useForm, SubmitHandler } from "react-hook-form"
-import partido from '../components/partido';
 
 
   interface IFormInputs {
