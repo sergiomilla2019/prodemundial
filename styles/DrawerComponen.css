@@ -1,0 +1,72 @@
+.MuiModal-rootx .MuiPaper-rootx {
+  width: 50%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.numbers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+.numbers-container h2 {
+  font-size: 3rem;
+}
+.tittle-container {
+  border-radius: 38px;
+  width: 100%;
+}
+.tittle {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 30px;
+  margin: 0 !important;
+  padding: 1rem;
+}
+.drawContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.2rem;
+}
+.image {
+  object-fit: contain;
+  width: 150px;
+  height: auto;
+  margin: 1.2rem;
+}
+@media screen and (max-width: 992px) {
+  .MuiModal-rootx .MuiPaper-rootx {
+    width: 70%;
+  }
+  .tittle {
+    font-size: 1.5rem;
+  }
+  .image {
+    width: 100px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .MuiModal-rootx .MuiPaper-rootx {
+    width: 100%;
+  }
+  .container {
+    margin: 0;
+    width: 85%;
+  }
+  .tittle {
+    font-size: 1.7rem;
+  }
+  .drawer {
+    width: 100%;
+  }
+  .image {
+    width: 100px;
+  }
+}

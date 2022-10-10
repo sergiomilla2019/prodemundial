@@ -1,0 +1,60 @@
+.cover_image {
+  background-image: url("../public/img/copa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  transition: top 1.5s ease-in-out;
+}
+.cover_image > * {
+  z-index: 100;
+  position: relative;
+  font-size: 4rem;
+  cursor: default;
+}
+.cover_image::after {
+  background-color: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.cover_image.out {
+  top: -200vh;
+}
+
+.cover-tittle {
+  font-size: 4rem;
+  padding: 3rem;
+  margin: 0;
+}
+.cover-container img {
+  max-width: 100%;
+  height: auto;
+  padding: 3rem;
+  width: 450px;
+}
+@media screen and (max-width: 992px) {
+  .cover-container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cover-container img {
+    width: 350px;
+  }
+  .cover-tittle {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 55px;
+    padding: 0;
+  }
+}
