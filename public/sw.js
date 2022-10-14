@@ -1,1 +1,114 @@
-if(!self.define){let e,i={};const o=(o,a)=>(o=new URL(o+".js",a).href,i[o]||new Promise((i=>{if("document"in self){const e=document.createElement("script");e.src=o,e.onload=i,document.head.appendChild(e)}else e=o,importScripts(o),i()})).then((()=>{let e=i[o];if(!e)throw new Error(`Module ${o} didn’t register its module`);return e})));self.define=(a,n)=>{const s=e||("document"in self?document.currentScript.src:"")||location.href;if(i[s])return;let c={};const g=e=>o(e,s),r={module:{uri:s},exports:c,require:g};i[s]=Promise.all(a.map((e=>r[e]||g(e)))).then((e=>(n(...e),c)))}}define(["./workbox-6a1bf588"],(function(e){"use strict";importScripts(),self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"/_next/static/BFVDgfqktl4pCSr9b3fpO/_buildManifest.js",revision:"c8c3a82342b7dc560a4e140ca8e3922c"},{url:"/_next/static/BFVDgfqktl4pCSr9b3fpO/_middlewareManifest.js",revision:"fb2823d66b3e778e04a3f681d0d2fb19"},{url:"/_next/static/BFVDgfqktl4pCSr9b3fpO/_ssgManifest.js",revision:"b6652df95db52feb4daf4eca35380933"},{url:"/_next/static/chunks/625-acb9a4d73121629c.js",revision:"acb9a4d73121629c"},{url:"/_next/static/chunks/712-685b9aa3237147a6.js",revision:"685b9aa3237147a6"},{url:"/_next/static/chunks/framework-a87821de553db91d.js",revision:"a87821de553db91d"},{url:"/_next/static/chunks/main-8ba0688acd913e7a.js",revision:"8ba0688acd913e7a"},{url:"/_next/static/chunks/pages/_app-9b4a13b93ca28d49.js",revision:"9b4a13b93ca28d49"},{url:"/_next/static/chunks/pages/_error-0a004b8b8498208d.js",revision:"0a004b8b8498208d"},{url:"/_next/static/chunks/pages/fixture-303250cb98c592d3.js",revision:"303250cb98c592d3"},{url:"/_next/static/chunks/pages/index-90b8ff304290a6a5.js",revision:"90b8ff304290a6a5"},{url:"/_next/static/chunks/polyfills-5cd94c89d3acac5f.js",revision:"99442aec5788bccac9b2f0ead2afdd6b"},{url:"/_next/static/chunks/webpack-fd1bc4a65a80e5c8.js",revision:"fd1bc4a65a80e5c8"},{url:"/_next/static/css/71e3e5e037ad4d87.css",revision:"71e3e5e037ad4d87"},{url:"/_next/static/css/bf45fa52362adb19.css",revision:"bf45fa52362adb19"},{url:"/_next/static/media/copa.05689b99.png",revision:"05689b99"},{url:"/icons/Group 60.png",revision:"6ea9867e1c57ceb4503bf9b684ed5d44"},{url:"/icons/Group 61.png",revision:"1bb5fb50aae52769467484952298b145"},{url:"/icons/arrowdown.png",revision:"0a86a217a4bdfc8e105ba3a80c39b556"},{url:"/img/CoverConBullets.png",revision:"c795df53ffaa6caa5e7c2e718c679e61"},{url:"/img/CoverSinBullets.png",revision:"9d2bd8dfdeff10703aa66c3f736b1525"},{url:"/img/Header.jpg",revision:"b4ae00deeeae6a089d95c4911273c5a9"},{url:"/img/Header_old.jpg",revision:"b937f400ee69fcae5a202af5c35ae0d5"},{url:"/img/Logos/Logo-Ingram-Solutions.png",revision:"34637950ada92bc5dda0ad24fb4e891e"},{url:"/img/Logos/logo-HPE.png",revision:"e1cf424027a72db5d38d20262a651a60"},{url:"/img/Logos/logo-apple.png",revision:"9244ab2405dbf35986090b0659a3a09e"},{url:"/img/Logos/logo-aruba.png",revision:"878534030a024bcd401fc661108a8338"},{url:"/img/Logos/logo-avigilon.png",revision:"b8ff5be98b79f0a2049b858dc61b9f5c"},{url:"/img/Logos/logo-axis.png",revision:"c2ecf418633197e9be8ca8fa98ef9f38"},{url:"/img/Logos/logo-barco.png",revision:"448e5dbab71f46dd5b4c11dd247ca74b"},{url:"/img/Logos/logo-beyond-trust.png",revision:"4b3cf0ee2b13ce4fdb82c04d1403c616"},{url:"/img/Logos/logo-check-point.png",revision:"a1c7ad035cdeb933c5fa604c62a21bd3"},{url:"/img/Logos/logo-cisco.png",revision:"e8780e6994cea7726e0bddd43d200f30"},{url:"/img/Logos/logo-citrix.png",revision:"eb698b3e683fd2654f02428b8687750e"},{url:"/img/Logos/logo-crowdstrike.png",revision:"7f054a6c7f7c6514135a89e23430fa0e"},{url:"/img/Logos/logo-elo-touch.png",revision:"08856dafe00f6b6ec87687ebd3adb409"},{url:"/img/Logos/logo-elo.png",revision:"76f098c06f4966d9c0305d7a7cff1cb8"},{url:"/img/Logos/logo-epson.png",revision:"f03239255c37147f199eef18d2d39ff7"},{url:"/img/Logos/logo-ergotron.png",revision:"eae2ff7034db75f8b8a5d4e57c30dda5"},{url:"/img/Logos/logo-eset.png",revision:"be10c68a7722b6eccd8040909616cc49"},{url:"/img/Logos/logo-f5.png",revision:"50cf20d51812fb18be704096b63efb03"},{url:"/img/Logos/logo-forcepoint.png",revision:"512b7c04e4e2ff811b041eb6bf397558"},{url:"/img/Logos/logo-fortinet.png",revision:"181a337bf84d5f56e82d71625c5c2a00"},{url:"/img/Logos/logo-gigamon.png",revision:"aa960947c8ac704382bbd0e87699a2a0"},{url:"/img/Logos/logo-ibm.png",revision:"74dca215fcf6b9d16a8d4ba6f9c86565"},{url:"/img/Logos/logo-infoblox.png",revision:"81c4007d49b9c602fc212510307f5571"},{url:"/img/Logos/logo-intel.png",revision:"ee3e7cf1e152df9263847d13497a7f01"},{url:"/img/Logos/logo-jamf.png",revision:"fc914d778efeaaaef94845708f6c959b"},{url:"/img/Logos/logo-jumio.png",revision:"70bd44df7aec2a38e21ac1ee3704fa2e"},{url:"/img/Logos/logo-juniper.png",revision:"5159ea49d0c0dec6e798546c7f839790"},{url:"/img/Logos/logo-kaspersky.png",revision:"dc6b9cc524b67cd40d3e6c6d0905915d"},{url:"/img/Logos/logo-logitech.png",revision:"327cc5801981318edcd19b1a28d803ca"},{url:"/img/Logos/logo-mandiant.png",revision:"2c5a080f8566c5e3bdab3c8fb8382ec1"},{url:"/img/Logos/logo-mcafee.png",revision:"6c42c9b043c91bb85146743ad91a593e"},{url:"/img/Logos/logo-microsoft.png",revision:"76dbad4c38ddc836eb0fc92cc1eadad6"},{url:"/img/Logos/logo-mist.png",revision:"62697f86417ba99038c0fd835c0a9696"},{url:"/img/Logos/logo-nsfocus.png",revision:"468dc7c470ae3024c2afbb2bb3f4f1a1"},{url:"/img/Logos/logo-okta.png",revision:"7349db68472486630cf265a997a3d648"},{url:"/img/Logos/logo-paloalto.png",revision:"169c27182a365c1815d300ebff100dbc"},{url:"/img/Logos/logo-poly.png",revision:"0ef96fe91b8b390555abd1267c6a4a64"},{url:"/img/Logos/logo-proofpoint.png",revision:"a731e368c0b96e596ab3840f90327a90"},{url:"/img/Logos/logo-pulse-secure.png",revision:"b1a5f0f24a107d40009bb4df475662c0"},{url:"/img/Logos/logo-quest.png",revision:"561b0656014ce308263fb4c176e6e094"},{url:"/img/Logos/logo-radware.png",revision:"0c6ff4233fe2410e5f8f65e4a2f7878f"},{url:"/img/Logos/logo-rsa.png",revision:"7dfa5ecc561733f6b4cc21df98d7651c"},{url:"/img/Logos/logo-sonicwall.png",revision:"ef9f550663df338709a53dcc21b76582"},{url:"/img/Logos/logo-sophos.png",revision:"ce4ada64bb005c6d9f2bd7bbd5707553"},{url:"/img/Logos/logo-tenable.png",revision:"9491fa3e9a2d836057c2f2b5456b4bc1"},{url:"/img/Logos/logo-trellix.png",revision:"d040eae0a5d168f0f2ae6bfd65f17d26"},{url:"/img/Logos/logo-trend-micro.png",revision:"089200fb4d69b22024b3b02e02221744"},{url:"/img/Logos/logo-veeam.png",revision:"950dbf20e2e7da8ba51c63d47abedd1d"},{url:"/img/Logos/logo-veritas.png",revision:"ed668ed06f9a55d3e4bee6844437d3a7"},{url:"/img/Logos/logo-view-sonic.png",revision:"948870caa2c0bd42bc9ae85557adc425"},{url:"/img/Logos/logo-vmware.png",revision:"39c5f8d508ff354823a6f8e9f08011d1"},{url:"/img/Logos/logo-watchguard.png",revision:"efca0a73950753fc0dd84eeca8c6a0fc"},{url:"/img/Logos/logo-zebra.png",revision:"bbc3d2c149f02960c4c7877eaa2c75d5"},{url:"/img/alemania.png",revision:"8e33d704aa6d6acbf6aa170a1f2bbb37"},{url:"/img/arabia.png",revision:"e865eca1da160b40397d4fb345368422"},{url:"/img/argentina.png",revision:"c21807c18416167be5bb2ab6c701773c"},{url:"/img/australia.png",revision:"482ce947ca00e16fc9e50345950017a9"},{url:"/img/belgica.png",revision:"bcfac0d8e92cdbd8413e7dc3e98e6233"},{url:"/img/brasil.png",revision:"1a4bbf5311506e37f5ae5f5759a1dff8"},{url:"/img/camerun.png",revision:"a3edb30940c3ec6c03be4ee930986d2a"},{url:"/img/canada.png",revision:"a05da3a77814fb26b7d0c9cb08a985b5"},{url:"/img/contact_icon.png",revision:"a8336c7fb27cd980aaedbb15d8a8fa9a"},{url:"/img/copa.png",revision:"911cd963f45e6092ebf182d7994280cf"},{url:"/img/corea.png",revision:"6731c147b39a3b59824383691bfb3beb"},{url:"/img/costarica.png",revision:"a139d4d5ddf93777f3eef09218837ddd"},{url:"/img/croacia.png",revision:"a31f982065759f04878a31721663e2a6"},{url:"/img/dinamarca.png",revision:"8624982456c44a19f1402ad905ed93a5"},{url:"/img/ecuador.png",revision:"18f5937075134bb83308c7feef0de312"},{url:"/img/eeuu.png",revision:"22f5946edbba4ae769a4f5e37a6bd260"},{url:"/img/espana.png",revision:"cc8e755a80a02e971afd3be008de203f"},{url:"/img/francia.png",revision:"2b28e71842d71b69c4edbdb12ff0f744"},{url:"/img/gales.png",revision:"79977b6e8b21e9796344a4336470d354"},{url:"/img/ghana.png",revision:"ac503a6e860745df8818ea8c50566c14"},{url:"/img/inglaterra.png",revision:"c395db95e2d5e52536c709b5e16fe4dc"},{url:"/img/iran.png",revision:"0bd02249881564fc6aae83205a87b253"},{url:"/img/japon.png",revision:"1b50856675a2294c210ed6fc247db62b"},{url:"/img/marruecos.png",revision:"e5714b97432af4e9bf94013f3f1ef541"},{url:"/img/mexico.png",revision:"4316365adfd6a6b514bc2bde5d468980"},{url:"/img/paisesbajos.png",revision:"66d201224a0f5247b2dd3972a10c69f4"},{url:"/img/polonia.png",revision:"6349016a8567fdebac945f8911faea99"},{url:"/img/portugal.png",revision:"6be51bfbf5f938d50ebc68366bb17ed4"},{url:"/img/qatar.png",revision:"b9e157b220a37f324d2115fd9a75af73"},{url:"/img/senegal.png",revision:"3cc0b21f76c0d1dc5517554de287793b"},{url:"/img/serbia.png",revision:"c1a95626fe1974169ed2f0ce90132198"},{url:"/img/suiza.png",revision:"b4c7f9508f3f66bc916217959b827060"},{url:"/img/tunez.png",revision:"e25f2d704e1dfbbc99bea9a9a30228aa"},{url:"/img/uruguay.png",revision:"1c1f5e6cf9302e96e58df1f8855d86b7"},{url:"/manifest.json",revision:"51896b46d4438d1512011e93374ba51e"},{url:"/vercel.svg",revision:"26bf2d0adaf1028a4d4c6ee77005e819"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute("/",new e.NetworkFirst({cacheName:"start-url",plugins:[{cacheWillUpdate:async({request:e,response:i,event:o,state:a})=>i&&"opaqueredirect"===i.type?new Response(i.body,{status:200,statusText:"OK",headers:i.headers}):i}]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:gstatic)\.com\/.*/i,new e.CacheFirst({cacheName:"google-fonts-webfonts",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:31536e3})]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:googleapis)\.com\/.*/i,new e.StaleWhileRevalidate({cacheName:"google-fonts-stylesheets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800})]}),"GET"),e.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,new e.StaleWhileRevalidate({cacheName:"static-font-assets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800})]}),"GET"),e.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,new e.StaleWhileRevalidate({cacheName:"static-image-assets",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\/_next\/image\?url=.+$/i,new e.StaleWhileRevalidate({cacheName:"next-image",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:mp3|wav|ogg)$/i,new e.CacheFirst({cacheName:"static-audio-assets",plugins:[new e.RangeRequestsPlugin,new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:mp4)$/i,new e.CacheFirst({cacheName:"static-video-assets",plugins:[new e.RangeRequestsPlugin,new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:js)$/i,new e.StaleWhileRevalidate({cacheName:"static-js-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:css|less)$/i,new e.StaleWhileRevalidate({cacheName:"static-style-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\/_next\/data\/.+\/.+\.json$/i,new e.StaleWhileRevalidate({cacheName:"next-data",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:json|xml|csv)$/i,new e.NetworkFirst({cacheName:"static-data-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute((({url:e})=>{if(!(self.origin===e.origin))return!1;const i=e.pathname;return!i.startsWith("/api/auth/")&&!!i.startsWith("/api/")}),new e.NetworkFirst({cacheName:"apis",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400})]}),"GET"),e.registerRoute((({url:e})=>{if(!(self.origin===e.origin))return!1;return!e.pathname.startsWith("/api/")}),new e.NetworkFirst({cacheName:"others",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute((({url:e})=>!(self.origin===e.origin)),new e.NetworkFirst({cacheName:"cross-origin",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:3600})]}),"GET")}));
+/**
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// If the loader is already loaded, just stop.
+if (!self.define) {
+  let registry = {};
+
+  // Used for `eval` and `importScripts` where we can't get script URL by other means.
+  // In both cases, it's safe to use a global var because those functions are synchronous.
+  let nextDefineUri;
+
+  const singleRequire = (uri, parentUri) => {
+    uri = new URL(uri + ".js", parentUri).href;
+    return registry[uri] || (
+      
+        new Promise(resolve => {
+          if ("document" in self) {
+            const script = document.createElement("script");
+            script.src = uri;
+            script.onload = resolve;
+            document.head.appendChild(script);
+          } else {
+            nextDefineUri = uri;
+            importScripts(uri);
+            resolve();
+          }
+        })
+      
+      .then(() => {
+        let promise = registry[uri];
+        if (!promise) {
+          throw new Error(`Module ${uri} didn’t register its module`);
+        }
+        return promise;
+      })
+    );
+  };
+
+  self.define = (depsNames, factory) => {
+    const uri = nextDefineUri || ("document" in self ? document.currentScript.src : "") || location.href;
+    if (registry[uri]) {
+      // Module is already loading or loaded.
+      return;
+    }
+    let exports = {};
+    const require = depUri => singleRequire(depUri, uri);
+    const specialDeps = {
+      module: { uri },
+      exports,
+      require
+    };
+    registry[uri] = Promise.all(depsNames.map(
+      depName => specialDeps[depName] || require(depName)
+    )).then(deps => {
+      factory(...deps);
+      return exports;
+    });
+  };
+}
+define(['./workbox-eac1af49'], (function (workbox) { 'use strict';
+
+  /**
+  * Welcome to your Workbox-powered service worker!
+  *
+  * You'll need to register this file in your web app.
+  * See https://goo.gl/nhQhGp
+  *
+  * The rest of the code is auto-generated. Please don't update this file
+  * directly; instead, make changes to your Workbox build configuration
+  * and re-run your build process.
+  * See https://goo.gl/2aRDsh
+  */
+
+  importScripts();
+  self.skipWaiting();
+  workbox.clientsClaim();
+  workbox.registerRoute("/", new workbox.NetworkFirst({
+    "cacheName": "start-url",
+    plugins: [{
+      cacheWillUpdate: async ({
+        request,
+        response,
+        event,
+        state
+      }) => {
+        if (response && response.type === 'opaqueredirect') {
+          return new Response(response.body, {
+            status: 200,
+            statusText: 'OK',
+            headers: response.headers
+          });
+        }
+
+        return response;
+      }
+    }]
+  }), 'GET');
+  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
+    "cacheName": "dev",
+    plugins: []
+  }), 'GET');
+
+}));
+//# sourceMappingURL=sw.js.map

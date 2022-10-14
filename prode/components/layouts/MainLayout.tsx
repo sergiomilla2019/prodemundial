@@ -105,7 +105,7 @@ export const MainLayout: FC<Props> = ({ setcoverState }) => {
           
         <div className="img_central">
           <div className="circle-colors">
-             <Typography>Fixture</Typography>
+             <Button href="/fixture">Fixture</Button>
           </div>
         </div>
         
