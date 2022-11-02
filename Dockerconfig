@@ -1,9 +1,0 @@
-Comandos
-
-#Login
-
-- docker login ingram.azurecr.io
-password del usuario: kAdbuCpTOZBfdaMjXxSX=crUJr7e2N22
-
-- docker build -t ingram.azurecr.io/education .
-- docker push ingram.azurecr.io/education
